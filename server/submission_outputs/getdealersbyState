@@ -1,0 +1,7 @@
+# Dealerships located in Kansas
+$ curl -sS -i http://localhost:8000/djangoapp/get_dealers/Kansas
+
+curl: (7) Failed to connect to localhost port 8000 after 0 ms: Couldn't connect to server
+
+
+# Exit code: 7

@@ -1,0 +1,7 @@
+# Login request; cookie jar is saved for the logout test
+$ curl -sS -i -c submission_outputs/cookies.txt -X POST -H Content-Type:\ application/json -d $'{"userName":"root","password":"\E[Cnnroot"}' http://localhost:8000/djangoapp/login
+
+curl: (7) Failed to connect to localhost port 8000 after 0 ms: Couldn't connect to server
+
+
+# Exit code: 7

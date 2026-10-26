@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+db.sqlite3
+djangoenv/
+node_modules/
+frontend/build/
+.env
+.DS_Store

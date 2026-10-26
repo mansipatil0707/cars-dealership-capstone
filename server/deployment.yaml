@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dealership
+  labels:
+    run: dealership
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: dealership
+  template:
+    metadata:
+      labels:
+        run: dealership
+    spec:
+      containers:
+        - name: dealership
+          image: us.icr.io/<YOUR_NAMESPACE>/dealership:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8000
+          env:
+            - name: backend_url
+              value: "https://<YOUR_EXPRESS_SERVICE_URL>"
+            - name: sentiment_analyzer_url
+              value: "https://<YOUR_SENTIMENT_SERVICE_URL>/"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dealership
+spec:
+  type: NodePort
+  selector:
+    run: dealership
+  ports:
+    - port: 8000
+      targetPort: 8000

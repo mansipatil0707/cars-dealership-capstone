@@ -1,0 +1,88 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-python:
+    name: Lint Python (flake8)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install flake8
+        run: pip install flake8
+
+      - name: Run flake8
+        run: |
+          flake8 server --count --select=E9,F63,F7,F82 --show-source --statistics \
+            --exclude=server/frontend,server/database
+          flake8 server --count --max-line-length=120 --exit-zero --statistics \
+            --exclude=server/frontend,server/database
+
+  lint-javascript:
+    name: Lint JavaScript (jshint)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install jshint
+        run: npm install -g jshint
+
+      - name: Run jshint on Express service
+        run: jshint --esversion=11 server/database/app.js server/database/review.js server/database/dealership.js
+
+  test-django:
+    name: Django tests
+    runs-on: ubuntu-latest
+    needs: lint-python
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r server/requirements.txt
+
+      - name: Run Django tests
+        working-directory: server
+        run: |
+          python manage.py makemigrations djangoapp
+          python manage.py test
+
+  build-frontend:
+    name: Build React frontend
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install and build
+        working-directory: server/frontend
+        run: |
+          npm install
+          npm run build

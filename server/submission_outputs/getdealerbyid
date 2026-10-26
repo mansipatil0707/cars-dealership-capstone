@@ -1,0 +1,7 @@
+# Dealership details for ID 1
+$ curl -sS -i http://localhost:8000/djangoapp/dealer/1
+
+curl: (7) Failed to connect to localhost port 8000 after 0 ms: Couldn't connect to server
+
+
+# Exit code: 7

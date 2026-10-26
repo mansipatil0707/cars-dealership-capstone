@@ -1,0 +1,7 @@
+# Logout request using the login cookie
+$ curl -sS -i -b submission_outputs/cookies.txt http://localhost:8000/djangoapp/logout
+
+curl: (7) Failed to connect to localhost port 8000 after 0 ms: Couldn't connect to server
+
+
+# Exit code: 7

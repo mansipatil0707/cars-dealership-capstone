@@ -1,0 +1,244 @@
+{
+  "cars": [
+    {
+      "dealer_id": 1,
+      "make": "NISSAN",
+      "model": "Pathfinder",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 24012
+    },
+    {
+      "dealer_id": 1,
+      "make": "Mercedes",
+      "model": "A-Class",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 43040
+    },
+    {
+      "dealer_id": 2,
+      "make": "NISSAN",
+      "model": "Pathfinder",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 34384
+    },
+    {
+      "dealer_id": 2,
+      "make": "Mercedes",
+      "model": "A-Class",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 27193
+    },
+    {
+      "dealer_id": 3,
+      "make": "NISSAN",
+      "model": "Pathfinder",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 45532
+    },
+    {
+      "dealer_id": 3,
+      "make": "Mercedes",
+      "model": "A-Class",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 56290
+    },
+    {
+      "dealer_id": 4,
+      "make": "NISSAN",
+      "model": "Pathfinder",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 36141
+    },
+    {
+      "dealer_id": 4,
+      "make": "Mercedes",
+      "model": "A-Class",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 22702
+    },
+    {
+      "dealer_id": 5,
+      "make": "NISSAN",
+      "model": "Pathfinder",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 2808
+    },
+    {
+      "dealer_id": 5,
+      "make": "Mercedes",
+      "model": "A-Class",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 8559
+    },
+    {
+      "dealer_id": 6,
+      "make": "NISSAN",
+      "model": "Pathfinder",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 58477
+    },
+    {
+      "dealer_id": 6,
+      "make": "Mercedes",
+      "model": "A-Class",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 18118
+    },
+    {
+      "dealer_id": 7,
+      "make": "NISSAN",
+      "model": "Pathfinder",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 12702
+    },
+    {
+      "dealer_id": 7,
+      "make": "Mercedes",
+      "model": "A-Class",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 39049
+    },
+    {
+      "dealer_id": 8,
+      "make": "NISSAN",
+      "model": "Pathfinder",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 18397
+    },
+    {
+      "dealer_id": 8,
+      "make": "Mercedes",
+      "model": "A-Class",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 3507
+    },
+    {
+      "dealer_id": 9,
+      "make": "NISSAN",
+      "model": "Pathfinder",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 8104
+    },
+    {
+      "dealer_id": 9,
+      "make": "Mercedes",
+      "model": "A-Class",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 40096
+    },
+    {
+      "dealer_id": 10,
+      "make": "NISSAN",
+      "model": "Pathfinder",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 29479
+    },
+    {
+      "dealer_id": 10,
+      "make": "Mercedes",
+      "model": "A-Class",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 23654
+    },
+    {
+      "dealer_id": 11,
+      "make": "NISSAN",
+      "model": "Pathfinder",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 48745
+    },
+    {
+      "dealer_id": 11,
+      "make": "Mercedes",
+      "model": "A-Class",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 52539
+    },
+    {
+      "dealer_id": 12,
+      "make": "NISSAN",
+      "model": "Pathfinder",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 21557
+    },
+    {
+      "dealer_id": 12,
+      "make": "Mercedes",
+      "model": "A-Class",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 29599
+    },
+    {
+      "dealer_id": 13,
+      "make": "NISSAN",
+      "model": "Pathfinder",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 40728
+    },
+    {
+      "dealer_id": 13,
+      "make": "Mercedes",
+      "model": "A-Class",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 34516
+    },
+    {
+      "dealer_id": 14,
+      "make": "NISSAN",
+      "model": "Pathfinder",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 8578
+    },
+    {
+      "dealer_id": 14,
+      "make": "Mercedes",
+      "model": "A-Class",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 26244
+    },
+    {
+      "dealer_id": 15,
+      "make": "NISSAN",
+      "model": "Pathfinder",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 59949
+    },
+    {
+      "dealer_id": 15,
+      "make": "Mercedes",
+      "model": "A-Class",
+      "bodyType": "SUV",
+      "year": 2023,
+      "mileage": 38787
+    }
+  ]
+}
